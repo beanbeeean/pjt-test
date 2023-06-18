@@ -30,7 +30,7 @@ function getAllCharts(page) {
 
         tracksArr.push(tracksImg.data.tracks.items[0].album.images[2].url);
       }
-
+      console.log("이미지", tracksArr);
       dispatch({
         type: "GET_ALL_CHARTS_SUCCESS",
         payload: { allCharts: data },
